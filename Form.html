@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form onsubmit="emailSend(); reset(); return false;" method="POST">
+        <div class="fields">
+            <div class="field name">
+                <input type="text" placeholder="Name" name="Name" id="name">
+            </div>
+            <div class="field email">
+                <input type="email"  placeholder="enter mail" id="email" name="email_id">
+            </div>
+        </div>
+        <div class="field">
+            <input type="text" placeholder="Mobile" id="mobile" name="mobile">
+        </div>
+        <div class="field">
+            <input type="text" placeholder="Subject" id="subject" name="subject">
+        </div>
+        <div class="field textarea">
+            <textarea cols="50" rows="20" placeholder="Message..." id="message" name="message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit" value="Send Message">Send message</button>
+        </div>
+</form>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</body>
+</html>
