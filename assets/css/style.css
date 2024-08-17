@@ -9,6 +9,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+
 ::selection{
   background-color: white;
   color: #040404;
@@ -25,7 +28,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url('../img/my-images/leptop2.jpg') top right no-repeat;
+  background: #040404 url('../img/my-images/100.jpg') top right no-repeat;
   background-size:contain;
   background-position: right;
   left: 0;
