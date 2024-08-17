@@ -25,8 +25,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url('../img/my-images/img1.jpg') top right no-repeat;
-  background-size: contain;
+  background: #040404 url('../img/my-images/leptop2.jpg') top right no-repeat;
+  background-size:contain;
   background-position: right;
   left: 0;
   right: 0;
