@@ -114,11 +114,11 @@ h6 {
 }
 
 #header .social-links {
-  margin-top: 40px;
+  margin-top: 56px !important;
   display: flex;
 }
 
-#header .social-links a {
+/* #header .social-links a {
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -130,10 +130,14 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
+} */
 
-#header .social-links a:hover {
+/* #header .social-links a:hover {
   background: #18d26e;
+} */
+
+.example-2 {
+  padding-left: 0px !important;
 }
 
 @media (max-width: 992px) {
