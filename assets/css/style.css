@@ -76,6 +76,8 @@ h6 {
   overflow-y: auto;
 }
 
+
+
 #header * {
   transition: ease-in-out 0.3s;
 }
@@ -171,10 +173,17 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links,
+#header.header-top .social-links ,
 #header.header-top h2 {
   display: none;
 }
+
+#header.header-top .download-button ,
+#header.header-top h2 {
+  display: none;
+}
+
+
 
 #header.header-top h1 {
   margin-right: auto;
@@ -426,6 +435,10 @@ section .container {
   font-size: 26px;
   color: #18d26e;
 }
+
+ /* #about .download-button {
+  display: none !important;
+} */
 
 .about-me .content ul {
   list-style: none;

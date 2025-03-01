@@ -96,6 +96,15 @@ ul {
   }
 
 
+  @media (max-width: 922px){
+    .download-button {
+      /* position: relative;
+      top: 2rem;
+      padding-left: 24px; */
+      display: none !important;
+  }
+  }
+
   /* button start css */ 
 button {
   position: relative;
@@ -252,6 +261,11 @@ button:hover .star-6 {
   top: 2rem;
   padding-left: 24px;
 }
+
+
+
+
+
 
 
 

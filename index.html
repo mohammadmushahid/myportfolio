@@ -678,7 +678,7 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -702,29 +702,29 @@
         </div>
       </div>
 
-      <form onsubmit="emailSend(); reset(); return false; " method="POST" class=" mt-4">
+      <form id="emailForm" class=" mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="fName" placeholder="First Name">
+            <input class="form-control" type="text" id="name" placeholder="Your Name" required>
           </div>
           <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="text" class="form-control" name="name" id="lName" placeholder="Last Name">
+            <input class="form-control"  type="email" id="email" placeholder="Your Email" required>
           </div>
-          <div class="col-md-6 form-group mt-3">
+          <!-- <div class="col-md-6 form-group mt-3">
             <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
           </div>
           <div class="col-md-6 form-group mt-3">
             <input type="mobile" class="form-control" name="mobile" id="mobile" placeholder="Your Mobile">
-          </div>
+          </div> -->
         </div>
-        <div class="form-group mt-3">
+        <!-- <div class="form-group mt-3">
           <input type="text" class="form-control" name="address" id="address" placeholder="Address">
         </div>
         <div class="form-group mt-3">
           <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-        </div>
+        </div> -->
         <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+          <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
         </div>
         <div class="my-3">
           <div class="loading">Loading</div>
@@ -732,6 +732,7 @@
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
         <div class="text-center"><button type="submit">Send Message</button></div>
+        <p id="statusMessage"></p>
       </form>
 
 
@@ -760,6 +761,8 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./assets/js/mail.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
